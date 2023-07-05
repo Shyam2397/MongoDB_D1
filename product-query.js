@@ -28,9 +28,7 @@ db.products.find({ product_price: { $gte: 500 } }).limit(4);
 
 // 5. Find the product name and product material of each products
 
-db.products
-    .find({}, { product_name: 1, product_material: 1, _id: 0 })
-    .toArray();
+db.products.find({}, { product_name: 1, product_material: 1, _id: 0 }).toArray();
 
 // 6. Find the product with a row id of 10
 
@@ -38,9 +36,7 @@ db.products.find({ id: "10" });
 
 // 7. Find only the product name and product material
 
-db.products
-    .find({}, { product_name: 1, product_material: 1, _id: 0 })
-    .toArray();
+db.products.find({}, { product_name: 1, product_material: 1, _id: 0 }).toArray();
 
 // 8. Find all products which contain the value of soft in product material
 
